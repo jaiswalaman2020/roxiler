@@ -71,10 +71,7 @@ npm run dev
 - Email: `admin@store-ratings.com`
 - Password: `Admin@123`
 
-## Deployment
+### Notes for Render Free Tier
 
-- Host backend on Render from `backend/`.
-- Host frontend on Vercel from `frontend/`.
-- Set:
-  - Backend `CORS_ORIGIN` = Vercel frontend URL
-  - Frontend `VITE_API_URL` = Render backend URL
+- Backend may sleep after inactivity and need a cold start.
+- Frontend already shows a loading spinner while API calls are pending.
