@@ -4,8 +4,10 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "setup": "npm install",
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
+    "build": "echo \"No build step required for backend\"",
     "db:schema": "node scripts/run-sql.js sql/schema.sql",
     "db:seed": "node scripts/run-sql.js sql/seed.sql"
   },
